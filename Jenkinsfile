@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'mvn clean generate-resources'
+                sh 'mvn clean generate-resources test'
             }
         }
     }
