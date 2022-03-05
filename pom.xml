@@ -37,14 +37,12 @@
                 <version>3.4.5</version>
                 <executions>
                     <execution>
-                        <phase>generate-sources</phase>
+                        <phase>generate-resources</phase>
                         <configuration>
                             <sourceRoot>${project.build.sourceDirectory}</sourceRoot>
                             <wsdlOptions>
                                 <wsdlOption>
-                                    <wsdl>
-                                        http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?wsdl
-                                    </wsdl>
+                                    <wsdl>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?wsdl</wsdl>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>
