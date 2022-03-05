@@ -1,12 +1,11 @@
 pipeline {
-   agent {
-        docker { image 'maven:3-alpine' }
-   }
+    agent { dockerfile true }
     stages {
-          stage ("test") {
-              steps {
-                sh 'mvn clean generate-resources'
-              }
+        stage('Test') {
+            steps {
+                sh 'node --version'
+                sh 'svn --version'
+            }
         }
     }
 }
